@@ -66,7 +66,7 @@
       text-decoration: none;
     }
 
-    /* LANGUAGE TOGGLE (FIXAD) */
+    /* LANGUAGE TOGGLE */
     .lang-toggle-container {
       display: flex;
       background: #e5e7eb;
@@ -166,12 +166,13 @@
       border-top: 1px solid transparent;
     }
 
+    /* UPPDATERAD KICKER (GRÅ ISTÄLLET FÖR GRÖN) */
     .kicker {
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--primary);
-      font-weight: 700;
+      color: var(--text-muted); /* Ändrat från var(--primary) */
+      font-weight: 600;
       margin-bottom: 16px;
       display: block;
     }
@@ -253,7 +254,7 @@
       transform: scale(1.05);
     }
 
-    /* STEPS SECTION (HUR) */
+    /* STEPS SECTION */
     .steps-section {
       padding: 60px 0 100px;
       border-top: 1px solid var(--border);
@@ -346,7 +347,7 @@
     <header>
       <a href="#" class="logo">Fami.</a>
       
-      <!-- NY SPRÅKVÄXLARE -->
+      <!-- SPRÅKVÄXLARE -->
       <div class="lang-toggle-container">
         <button class="lang-btn active" id="btn-sv" onclick="changeLanguage('sv')">SV</button>
         <button class="lang-btn" id="btn-en" onclick="changeLanguage('en')">EN</button>
@@ -449,7 +450,7 @@
       </div>
     </section>
 
-    <!-- HOW IT WORKS (STEPS) - UPPDATERAD -->
+    <!-- HOW IT WORKS (STEPS) -->
     <section class="steps-section">
       <div style="text-align: center; max-width: 600px; margin: 0 auto;">
         <span class="kicker" data-i18n="howKicker">Hur det funkar</span>
@@ -468,7 +469,7 @@
           </p>
         </div>
         
-        <!-- Steg 2 (NYTT FOKUS: INNEHÅLL) -->
+        <!-- Steg 2 -->
         <div class="step-item">
           <h4><span class="step-num">02</span> <span data-i18n="step2Title">Väck historien till liv</span></h4>
           <p class="step-text" data-i18n="step2Text">
@@ -476,7 +477,7 @@
           </p>
         </div>
         
-        <!-- Steg 3 (NYTT FOKUS: GEMENSKAP) -->
+        <!-- Steg 3 -->
         <div class="step-item">
           <h4><span class="step-num">03</span> <span data-i18n="step3Title">Samla släkten</span></h4>
           <p class="step-text" data-i18n="step3Text">
@@ -532,7 +533,7 @@
         cardDiasporaTitle: "För diasporan",
         cardDiasporaText: "Oavsett om släkten bor i Stockholm, Chicago eller Beirut – Fami knyter ihop trådarna över gränserna.",
 
-        // HOW Section (UPPDATERAD)
+        // HOW Section
         howKicker: "Hur det funkar",
         howTitle: "Ett digitalt vardagsrum",
         howText: "En trygg, lugn plats där släkten kan bidra med minnen utan att det känns som ännu ett socialt medie-konto.",
@@ -575,7 +576,7 @@
         cardDiasporaTitle: "For the Diaspora",
         cardDiasporaText: "Whether your family lives in Stockholm, Chicago, or Beirut – Fami connects the threads across borders.",
 
-        // HOW Section (UPDATED)
+        // HOW Section
         howKicker: "How it works",
         howTitle: "A digital living room",
         howText: "A safe, calm place where relatives can contribute memories without it feeling like just another social media account.",
